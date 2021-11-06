@@ -55,7 +55,7 @@ try {
     // console.log(p);
     // await page.click(".gs_in_ib.gs_md_li.gs_md_lix.gs_in_gray");
     // await page.click("button#search-icon-legacy");
-    // await page.waitForSelector("ytd-thumbnail.ytd-video-renderer");
+    //
     // await page.screenshot({ path: "youtube_fm_dreams_list.png" });
     // const videos = await page.$$("ytd-thumbnail.ytd-video-renderer");
     // await videos[2].click();
