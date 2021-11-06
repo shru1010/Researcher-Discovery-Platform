@@ -1,0 +1,411 @@
+[
+  {
+    "name": "Amit Chattopadhyay",
+    "link": "https://www.iiitb.ac.in/faculty/amit-chattopadhyay",
+    "education": "Ph.D. (University of Groningen)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Amit_Chattopadhyay_.jpg",
+    "rInterests": "Computational Topology, Data Analysis and Visualizations, Geometric Algorithms, Computational Singularity Theory, Optimization on Matrix Manifolds, Level Set Methods"
+  },
+  {
+    "name": "Amit Prakash",
+    "link": "https://www.iiitb.ac.in/faculty/amit-prakash",
+    "education": "FPM (IIM Bangalore)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Amit_Prakash_Apr2019.jpg",
+    "rInterests": "ICT and Development (ICTD), e-Governance, Public Policy, Information Systems"
+  },
+  {
+    "name": "Amrita Mishra",
+    "link": "https://www.iiitb.ac.in/faculty/amrita-mishra",
+    "education": "Ph.D. (IIT Kanpur)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/amrita-mishra.jpg",
+    "rInterests": "Design and development of PHY layer technologies for next generation wireless systems \n\tApplications of signal processing and machine learning for 5G and beyond communication \n\tUnified network design architecture (by facilitating cross-layer design) for  5G and beyond communication systems\n\tSparse signal processing \n\tMillimeter wave communication \n\tInternet of Things (IoT) \n\tSocial Signal Processing"
+  },
+  {
+    "name": "Arti Yardi",
+    "link": "https://www.iiitb.ac.in/faculty/arti-dilip-yardi",
+    "education": "Ph.D. (IIT Bombay)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Arti_Yardi.jpg",
+    "rInterests": "Error correcting codes with primary focus on cyclic, LDPC, Turbo, and spatially-coupled codes\n\tReverse engineering of communication systems\n\tCovert communication\n\tCoding for distributed machine learning and distributed data storage\n\tInformation theory"
+  },
+  {
+    "name": "Ashish Choudhury",
+    "link": "https://www.iiitb.ac.in/faculty/ashish-choudhury",
+    "education": "Ph.D. (IIT Madras)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Ashish-Choudhury.jpg",
+    "rInterests": "Foundation of Cryptographic Protocols for , Designing of Protocols in the Asynchronous Network Model, Secure Distributed Computing , Areas of Theoretical Computer Science"
+  },
+  {
+    "name": "Balaji Parthasarathy",
+    "link": "https://www.iiitb.ac.in/faculty/balaji-parthasarathy",
+    "education": "Ph.D. (University of California Berkeley)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof_Balaji_.jpg",
+    "rInterests": "The State and Late Industrialisation; Innovation Policies and Regional Economic Development; Civil Society Institutions, Frugal/Social Innovation; Multinational Enterprises, Small and Medium Enterprises; Computer Software and New Media Industries;  Political-Economy of E-Governance and Information Access; E-Waste Flows; Urbanism, Urbanisation and \"Smart\" cities; The Platform Economy"
+  },
+  {
+    "name": "Balakrishnan Ashok",
+    "link": "https://www.iiitb.ac.in/faculty/balakrishnan-ashok",
+    "education": "Ph.D. (University of Massachusetts Amherst)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof_Balakrishnan_Ashok_.jpg",
+    "rInterests": "Complex Systems, Nonlinear dynamics, Biomechanics & Biology-motivated problems, Theoretical Soft Condensed Matter  & Polymer Physics"
+  },
+  {
+    "name": "Bidisha Chaudhuri",
+    "link": "https://www.iiitb.ac.in/faculty/bidisha-chaudhuri",
+    "education": "Ph.D. (Universität Heidelberg)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Bidisha_Chaudhuri.jpg",
+    "rInterests": "Digital Governnace and Infrastructure, Critical Data Studies,Science and Technology Studies, ICTs for Development (ICTD)"
+  },
+  {
+    "name": "Chandramouleeswaran Sankaran (Mouli)",
+    "link": "https://www.iiitb.ac.in/faculty/chandramouleeswaran-sankaran-mouli",
+    "education": "M.Tech.(CS), Indian Institute of Technology, Madras",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Mouli_Sankaran.jpg"
+  },
+  {
+    "name": "Chandrashekar Ramanathan",
+    "link": "https://www.iiitb.ac.in/faculty/chandrashekar-ramanathan",
+    "education": "Ph.D. (Mississippi State University)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Chandrashekar-Rama.jpg",
+    "rInterests": "Data Sciences , Software Architecture and Technology for , Software Engineering , Enterprise Content Management and Knowledge, Semi-structured Databases"
+  },
+  {
+    "name": "Chetan Parikh",
+    "link": "https://www.iiitb.ac.in/faculty/chetan-parikh",
+    "education": "Ph.D. (University of Florida)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Chetan_Parikh_.jpg",
+    "rInterests": "Analog and mixed-signal circuit design"
+  },
+  {
+    "name": "Debabrata Das",
+    "link": "https://www.iiitb.ac.in/faculty/debabrata-das",
+    "education": "Ph.D. (IIT Kharagpur)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Debabrata_Das_1_.jpg",
+    "rInterests": "Medium Access Control Protocol for Energy Saving and QoS for Wireless Access Networks as well as IoT, IP Multimedia Subsystems, Mobile Computing"
+  },
+  {
+    "name": "Dinesh Babu Jayagopi",
+    "link": "https://www.iiitb.ac.in/faculty/dinesh-babu-jayagopi",
+    "education": "Ph.D. (École Polytechnique Fédérale de Lausanne)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Dinesh_Babu_Jayagopi_.jpg",
+    "rInterests": "Audio Visual Signal, Processing, Applied Machine Learning, Machine Perception, Applied Signal Processing, Social Computing, Human Robot Interaction, Multimedia Analysis, Behavior Analysis"
+  },
+  {
+    "name": "G N Srinivasa Prasanna",
+    "link": "https://www.iiitb.ac.in/faculty/g-n-srinivasa-prasanna",
+    "education": "Ph.D. (Massachusetts Institute of Technology)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Prasanna_(2)_.jpg",
+    "rInterests": "Robust optimization, Communication systems (optical, wireless, power line), Electromechanical systems, Animation and mathematics"
+  },
+  {
+    "name": "G Srinivasaraghavan ",
+    "link": "https://www.iiitb.ac.in/faculty/g-srinivasaraghavan",
+    "education": "Ph.D. (IIT Kanpur)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof_Srinivasaraghavan_1.jpg",
+    "rInterests": "Machine learning, Optimization, Computational intelligence, Algorithms and complexity"
+  },
+  {
+    "name": "Girish S Kumar",
+    "link": "https://www.iiitb.ac.in/faculty/girish-s-kumar",
+    "education": "M.Tech. (University of Calicut)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof_-Girish-S_-Kumar_.jpg"
+  },
+  {
+    "name": "Harish Ramani",
+    "link": "https://www.iiitb.ac.in/faculty/harish-ramani",
+    "education": "Ph.D. (Queensland University of Technology)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Dr_-Harish-.jpg"
+  },
+  {
+    "name": "Janaki Srinivasan",
+    "link": "https://www.iiitb.ac.in/faculty/janaki-srinivasan",
+    "education": "Ph.D. (University of California Berkeley)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/janaki.jpg",
+    "rInterests": "Political economy of information-based development, privacy, critical social theory, algorithmic management of work, politics of work automation, situated learning at work, development theory, financial inclusion, ICTD, politics of identity systems"
+  },
+  {
+    "name": "Jaya Sreevalsan Nair",
+    "link": "https://www.iiitb.ac.in/faculty/jaya-sreevalsan-nair",
+    "education": "Ph.D. (University of California Davis)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Jaya_Sreevalsan_Nair_.jpg",
+    "rInterests": "Spatial big data analytics (multivariate/tensor/network data modeling and visual analytics) with a focus on applications in earth observations (LiDAR point clouds, ocean data), geographical networks (e.g. transport), biological networks (genomic, brain) and survey data pertaining to population health and public health."
+  },
+  {
+    "name": "Jyotsna Bapat",
+    "link": "https://www.iiitb.ac.in/faculty/jyotsna-bapat",
+    "education": "Ph.D. (Pennsylvania State University)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Jyotsna_Bapat_.jpg",
+    "rInterests": "Wireless communication systems, Opportunistic communication , Cognitive Radios and communication for Internet of Thing , semi-blind identification as applied to OFDM systems"
+  },
+  {
+    "name": "K V Dinesha",
+    "link": "https://www.iiitb.ac.in/faculty/k-v-dinesha",
+    "education": "Ph.D. (IIT Bombay)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Dinesha_K_V_.jpg",
+    "rInterests": "Software Engineering , Quality Systems (ISO and SEI CMM Models), Cryptography, Object Technology and Data Structures, Developing Scientific and Commercial Software"
+  },
+  {
+    "name": "Madhav Rao",
+    "link": "https://www.iiitb.ac.in/faculty/madhav-rao",
+    "education": "Ph.D. (University of Alabama)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Madhav_Rao_.jpg",
+    "rInterests": "Approximate computing VLSI design, FPGA optimized CNN and AI designs for edge computing applications, VLSI design for Image and Signal processing applications, Assistive biomedical devices, Surgical and autonomous robotics."
+  },
+  {
+    "name": "Manish Gupta",
+    "link": "https://www.iiitb.ac.in/faculty/manish-gupta",
+    "education": "Ph.D. (University of Illinois at Urbana Champaign)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Manish_Gupta_.jpg",
+    "rInterests": "Technologies for learning, machine learning, program analysis, high performance computing"
+  },
+  {
+    "name": "Manisha Kulkarni",
+    "link": "https://www.iiitb.ac.in/faculty/manisha-kulkarni",
+    "education": "Ph.D. (IMSc Chennai)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Manisha_Kulkarni_.jpg",
+    "rInterests": "Diophantine equations, Elliptic Curves, Galois groups and Class groups, Number Theory and Galois Module Structure problems in Algebraic Number Theory"
+  },
+  {
+    "name": "Meenakshi D'Souza",
+    "link": "https://www.iiitb.ac.in/faculty/meenakshi-dsouza",
+    "education": "Ph.D (IMSc Chennai)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Meenakshi_D_Souza_1_.jpg",
+    "rInterests": "Formal Methods, Model Based Development, Automata Theory, Software Testing, Design and architectures for embedded software"
+  },
+  {
+    "name": "Mohan Ram C ",
+    "link": "https://www.iiitb.ac.in/faculty/mohan-ram-c",
+    "education": "M.Tech. (IIT Roorkee)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof_-Mohan-Ram_.jpg"
+  },
+  {
+    "name": "Nanditha Rao",
+    "link": "https://www.iiitb.ac.in/faculty/nanditha-rao",
+    "education": "Ph.D. (IIT Bombay)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/IMG_0276_1_resized.JPG",
+    "rInterests": "Radiation hardened processors, Security aspect of processor design, Cache and prefetcher design, FPGA-based accelerators"
+  },
+  {
+    "name": "Neelam Sinha",
+    "link": "https://www.iiitb.ac.in/faculty/neelam-sinha",
+    "education": "Ph.D. (IISC Bangalore)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Neelam_Sinha_.jpg",
+    "rInterests": "Medical imaging, Processing, Computer Vision Strategies for Rapid MR Imaging, Diffusion Weighted MR Imaging, EEG Analysis, Time Series Analysis, MR Image Reconstruction"
+  },
+  {
+    "name": "Nikhil Krishnan M",
+    "link": "https://www.iiitb.ac.in/faculty/nikhil-krishnan-m",
+    "education": "Ph.D. (IISC Bangalore)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Nikhil-Krishnan.jpg"
+  },
+  {
+    "name": "Pradeesha Ashok",
+    "link": "https://www.iiitb.ac.in/faculty/pradeesha-ashok",
+    "education": "Ph.D. (IISC Bangalore)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Pradeesha_Ashok_.jpg",
+    "rInterests": "Algorithms, Graph Theory, Combinatorics, Theoretical Computer Science, Parameterized Complexity"
+  },
+  {
+    "name": "Preeti Mudliar",
+    "link": "https://www.iiitb.ac.in/faculty/preeti-mudliar",
+    "education": "Ph.D. (University of Texas at Austin)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Preeti-Mudliar.jpg",
+    "rInterests": "Human Computer Interaction (HCI), ICT and Development (ICTD), e-Governance, Design of Public Technologies, Gender and ICTs, Biometrics, Aadhaar, Food Security, News Processes, Gig Economy"
+  },
+  {
+    "name": "Prem Singh",
+    "link": "https://www.iiitb.ac.in/faculty/prem-singh",
+    "education": "Ph.D. (IIT Kanpur)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/prem-singh1.jpg",
+    "rInterests": "Areas"
+  },
+  {
+    "name": "Priyanka Das",
+    "link": "https://www.iiitb.ac.in/faculty/priyanka-das",
+    "education": "Ph.D. (IISc Bangalore)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Priyanka_.jpg",
+    "rInterests": "Wireless Communication Systems, Spectrum Sharing Networks, Physical Layer Security, Intelligent Reflecting Surfaces (IRS) for 6G"
+  },
+  {
+    "name": "Radha M Parikh",
+    "link": "https://www.iiitb.ac.in/faculty/radha-m-parikh",
+    "education": "Ph.D. (University of Missouri-Columbia)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Radha_Parikh.jpg"
+  },
+  {
+    "name": "Ramesh Sundararaman",
+    "link": "https://www.iiitb.ac.in/faculty/ramesh-sundararaman",
+    "education": "M.E. (Indian Institute of Science)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Ramesh_Sundararaman.jpg"
+  },
+  {
+    "name": "Ramesh Kestur",
+    "link": "https://www.iiitb.ac.in/faculty/ramesh-kestur",
+    "education": "",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Ramesh-Kestur.png",
+    "rInterests": "Computer Vision, Digital image processing, deep learning, machine learning, Computational Pathology, Low Altitude Remote Sensing, Exploratory Data Analysis"
+  },
+  {
+    "name": "Roland Erik Haas",
+    "link": "https://www.iiitb.ac.in/faculty/roland-erik-haas",
+    "education": "Ph.D. (Technical University of Clausthal)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/ronald-haas.jpg",
+    "rInterests": "Embedded Systems, Cyber-Physical Systems, Automotive Electronics, Automotive Cyber Security, Cyber Security for critical infrastructures, Autonomous Driving, Service Robotics, Artificial Intelligence and Machine Learning"
+  },
+  {
+    "name": "S Rajagopalan ",
+    "link": "https://www.iiitb.ac.in/faculty/s-rajagopalan",
+    "education": "Ph.D. (IIT Kanpur)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Rajagopalan_S_.jpg",
+    "rInterests": "Innovation dissemination, Economics of innovations, Geographical Information systems and Economics of Information Technologies"
+  },
+  {
+    "name": "S S Prabhu ",
+    "link": "https://www.iiitb.ac.in/faculty/s-s-prabhu",
+    "education": "Ph.D. (University of Toronto)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prabhu_.jpg"
+  },
+  {
+    "name": "Sachit Rao",
+    "link": "https://www.iiitb.ac.in/faculty/sachit-rao",
+    "education": "Ph.D. (Ohio State University)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Sachit_Rao_.jpg",
+    "rInterests": "Control Systems and Theory, Robotics, Computer Vision, Statistical Learning, Energy-aware Computing"
+  },
+  {
+    "name": "Samar Shailendra",
+    "link": "https://www.iiitb.ac.in/faculty/samar-shailendra",
+    "education": "Ph.D. (IIT Guwahati)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Samar_Shailendra_1.jpg",
+    "rInterests": "SDN , ICN , M2M/IoT , Wireless MAC , QoS and multipath protocols"
+  },
+  {
+    "name": "Shiva Kumar Malapaka",
+    "link": "https://www.iiitb.ac.in/faculty/shiva-kumar-malapaka",
+    "education": "Ph.D. (Universitat Bayreuth)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Shivkumar_Malapaka_.jpg",
+    "rInterests": "Three Dimensional Simulations of Hydrodynamic and Magnetohydrodynamic Turbulence, Simulations of Magnetic confinement of Plasma (ITER), N-body simulations for Planetary Formation"
+  },
+  {
+    "name": "Shrisha Rao",
+    "link": "https://www.iiitb.ac.in/faculty/shrisha-rao",
+    "education": "Ph.D. (University of Iowa)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Shrisha_Rao_.jpg",
+    "rInterests": "renewable energy, intelligent transportation systems, computational sustainability, agent-based modeling, artificial intelligence"
+  },
+  {
+    "name": "Srinath Srinivasa",
+    "link": "https://www.iiitb.ac.in/faculty/srinath-srinivasa",
+    "education": "Ph.D. (Brandenburg Technical University Cottbus)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Srinath_Srinivasa_.jpg",
+    "rInterests": "Web Science, Text mining, Network analysis, Multi-agent systems"
+  },
+  {
+    "name": "Srinivas Vivek",
+    "link": "https://www.iiitb.ac.in/faculty/srinivasvivek",
+    "education": "Ph.D. (University of Luxembourg)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Vivek_.jpg"
+  },
+  {
+    "name": "Subajit Sen",
+    "link": "https://www.iiitb.ac.in/faculty/subajit-sen",
+    "education": "Ph.D. (University of Waterloo)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Subajit_Sen_.jpg",
+    "rInterests": "Analog and mixed-signal VLSI integrated circuit & system design, Digitally-assisted analog circuit design, Embedded-systems for biomedical and energy-harvesting applications, RF Circuit Design"
+  },
+  {
+    "name": "Subir Kumar Roy",
+    "link": "https://www.iiitb.ac.in/faculty/subir-kumar-roy",
+    "education": "Ph.D. (IIT Bombay)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Subir_K_Roy_.jpg",
+    "rInterests": "Hardware formal verification, Power estimation, Performance analysis, CAD for VLSI and embedded systems"
+  },
+  {
+    "name": "Sujit Kumar Chakrabarti",
+    "link": "https://www.iiitb.ac.in/faculty/sujit-kumar-chakrabarti",
+    "education": "Ph.D. (IISc Bangalore)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Sujith_.jpg",
+    "rInterests": "Software Engineering, Formal Methods and Software Testing, Programming, Tech-blogging, healthcare, web-services, Programming Languages, Education Technology"
+  },
+  {
+    "name": "Sundara Nagarajan",
+    "link": "https://www.iiitb.ac.in/faculty/sundara-nagarajan",
+    "education": "M.S. by research (Indian Institute of Technology Madras)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/nagarajan.jpg",
+    "rInterests": "His current interest is in developing predictive analytics and artificial intelligence for developing methodologies for assessing the scalability of ventures."
+  },
+  {
+    "name": "T K Srikanth ",
+    "link": "https://www.iiitb.ac.in/faculty/t-k-srikanth",
+    "education": "Ph.D. (Cornell University)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Srikant_.jpg",
+    "rInterests": "Mobile and cloud applications, Geometric modeling and graphics,, 3D printing, Distributed computing, ehealth, Data privacy"
+  },
+  {
+    "name": "Thangaraju B",
+    "link": "https://www.iiitb.ac.in/faculty/thangaraju-b",
+    "education": "Ph.D. (Bharathidasan University)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Thangaraju_.jpg",
+    "rInterests": "Operating System, Embedded and Real Time Systems, Linux Kernel, DevOps, Container Technology and IoT."
+  },
+  {
+    "name": "Uttam Kumar",
+    "link": "https://www.iiitb.ac.in/faculty/uttam-kumar",
+    "education": "Ph.D. (IISc Bangalore)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Uttam-Kumar.jpg",
+    "rInterests": "Data mining / Data science, Applied machine learning, Remote sensing, Digital image processing, Management Information System (MIS), large scale geospatial data analysis and free and open source software"
+  },
+  {
+    "name": "V Ramasubramanian",
+    "link": "https://www.iiitb.ac.in/faculty/v-ramasubramanian",
+    "education": "Ph.D. (TIFR Bombay)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/V-Ramasubramanian.jpg",
+    "rInterests": "Speech recognition and synthesis, machine learning, deep learning, associative memory"
+  },
+  {
+    "name": "V N Muralidhara ",
+    "link": "https://www.iiitb.ac.in/faculty/v-n-muralidhara",
+    "education": "Ph.D. (IIT Delhi)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Muralidhara_.jpg",
+    "rInterests": "Theory of algorithms and complexity and its applications, Combinatorial optimization, Approximation algorithms, Randomized algorithms, On-line algorithms"
+  },
+  {
+    "name": "V Sridhar ",
+    "link": "https://www.iiitb.ac.in/faculty/v-sridhar",
+    "education": "Ph.D. (University of Iowa)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/V_Sridhar_.jpg",
+    "rInterests": "Techno-economic growth modeling of telecommunication networks and services; Radio spectrum allocation, management and policy; Telecommunications, Internet and Privacy policy issues in developing countries; Agent-Based Modeling of techno-economic systems; Techno-economics of digital economy and platforms; Management of Distributed Software Projects"
+  },
+  {
+    "name": "Valsala Rajan",
+    "link": "https://www.iiitb.ac.in/faculty/valsala-rajan",
+    "education": "",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof_-Valsala-Rajan_.jpg"
+  },
+  {
+    "name": "Vinod Veera Reddy",
+    "link": "https://www.iiitb.ac.in/faculty/vinod-veera-reddy",
+    "education": "Ph.D. (Nanyang Technological University Singapore)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/Prof__Vinod_Reddy_.jpg",
+    "rInterests": "Problem solving with Signal processing for diverse applications, Sensor analytics and machine learning., beamforming, Biomedical ultrasound systems, Phased-array radar processing, adaptive array processing"
+  },
+  {
+    "name": "Viswanath  Gopalakrishnan",
+    "link": "https://www.iiitb.ac.in/faculty/viswanath-gopalakrishnan",
+    "education": "Ph.D. (Nanyang Technological University Singapore)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/vishwanath-gopalkrishana.jpg",
+    "rInterests": "Computer Vision Problems , Machine learning, artificial intelligence"
+  },
+  {
+    "name": "Vivek Yadav",
+    "link": "https://www.iiitb.ac.in/faculty/vivek-yadav",
+    "education": "",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/vivek.jpg",
+    "rInterests": "High Performance Systems, Big Data, Data Stream, Algorithm and Data Structure. "
+  },
+  {
+    "name": "Yashavant Kanetkar",
+    "link": "https://www.iiitb.ac.in/faculty/yashavant-kanetkar",
+    "education": "M.Tech (IIT Kanpur)",
+    "imageURL": "https://www.iiitb.ac.in/includefiles/members/medium/yashavant-k.jpg"
+  }
+]
