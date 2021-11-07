@@ -4,18 +4,12 @@ try {
   (async () => {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
-    //await page.setDefaultNavigationTimeout(0);
     await page.goto("https://www.iiitb.ac.in/faculty");
-    //await page.waitForNavigation( { timeout: 60, waitUntil: 'domcontentloaded' });
-    //await page.waitForSelector("#faculty > tbody > tr:nth-child(1) > td:nth-child(2) > h3 > a");
-    //console.log("Hello");
-    //console.log(await page.$$("div.faculty-info > h3 > a"));
-    // let startingData = [{}];
     let scrapedData = [];
     const scrapeData = async (i) => {
       let length = scrapedData.length;
       if (i !== 1) {
-        // console.log("I is " + i);
+        // console.log("i is " + i);
         await page.goto(`https://www.iiitb.ac.in/faculty/${i}`);
       }
       let faculties = await page.$$("div.faculty-single-box");
@@ -81,14 +75,12 @@ try {
             );
             temp = temp.trim();
           }
-          scrapedData[length + k]["rInterests"] = temp;
+          scrapedData[length + k]["researchInterests"] = temp;
         } catch (error) {}
       }
       if (i == 1) {
-        // console.log("IF");
         await page.goto(`https://www.iiitb.ac.in/faculty/`);
       } else {
-        // console.log("ELSE");
         await page.goto(`https://www.iiitb.ac.in/faculty/${i}`);
       }
       let nextButtonExist = false;
@@ -97,11 +89,9 @@ try {
           "div.pagination-main > ul > li:last-child > a[rel]",
           (a) => a.textContent
         );
-        // console.log("Next button " + nextButton);
         nextButtonExist = true;
       } catch (err) {
         // console.log(err);
-        // console.log("Next ERRROR");
         nextButtonExist = false;
       }
       if (nextButtonExist) {
