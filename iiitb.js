@@ -2,18 +2,28 @@ const puppeteer = require("puppeteer");
 const fs = require("fs");
 try {
   (async () => {
+    // Lauch Chromium browser
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
+    // Go to IIIT Bangalore faculty page
     await page.goto("https://www.iiitb.ac.in/faculty");
+    // Final array storing all faculty details.
     let scrapedData = [];
+
+    // This function is called for each page number passed in i.
     const scrapeData = async (i) => {
+      // Storing the length of scrapedData before the page is scraped.
       let length = scrapedData.length;
       if (i !== 1) {
         // console.log("i is " + i);
         await page.goto(`https://www.iiitb.ac.in/faculty/${i}`);
       }
+      // faculties array contains all elements which are a div with class faculty-single-box
       let faculties = await page.$$("div.faculty-single-box");
+      // Store faculty data for a single page.
       let facData = [];
+
+      // Store the name, profile link, education and image URL for each faculty in faculties array into facData and scrapedData.
       const getScrapedData = async (fac) => {
         let name = "",
           link = "",
@@ -54,9 +64,13 @@ try {
         scrapedData.push(local);
       };
 
+      // Calling getScrapedData for each faculty in faculties array.
       for (let j = 0; j < faculties.length; j++) {
         await getScrapedData(faculties[j]);
       }
+      
+      // For each faculty in facData, we go to their respective profile link, get their research interests and store it in corresponding
+      // index of scrapedData.
       for (let k = 0; k < facData.length; k++) {
         console.log(facData[k].name);
         await page.goto(facData[k].link);
@@ -64,6 +78,7 @@ try {
           await page.waitForSelector("#research_interests", { timeout: 500 });
           let temp;
           try {
+            // Reseach Interests were sometimes unordered list and sometimes comma-separated paragraph.
             temp = await page.$eval(
               "#research_interests p",
               (el) => el.textContent
@@ -76,13 +91,19 @@ try {
             temp = temp.trim();
           }
           scrapedData[length + k]["researchInterests"] = temp;
-        } catch (error) {}
+        } catch (error) {
+          console.log(error);
+        }
       }
+
+      
+      // Here we need to go back to the main page again after scraping the research interests of last faculty memeber in that page.
       if (i == 1) {
         await page.goto(`https://www.iiitb.ac.in/faculty/`);
       } else {
         await page.goto(`https://www.iiitb.ac.in/faculty/${i}`);
       }
+      // On the main page, we check for the existence of next page.
       let nextButtonExist = false;
       try {
         const nextButton = await page.$eval(
@@ -98,9 +119,11 @@ try {
         return scrapeData(i + 1); // Call this function recursively
       }
     };
+    // Call scrapeData for the first time with the first page.
     await scrapeData(1);
     await page.close();
     await browser.close();
+    // Writing the data from scrapedData to a file.
     fs.writeFile(
       "data.json",
       JSON.stringify(scrapedData),
