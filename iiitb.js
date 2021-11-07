@@ -57,6 +57,7 @@ try {
       for (let j = 0; j < faculties.length; j++) {
         await getScrapedData(faculties[j]);
       }
+      
       for (let k = 0; k < facData.length; k++) {
         console.log(facData[k].name);
         await page.goto(facData[k].link);
