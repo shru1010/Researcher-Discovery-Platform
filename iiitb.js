@@ -92,7 +92,7 @@ try {
           }
           scrapedData[length + k]["researchInterests"] = temp;
         } catch (error) {
-          console.log(error);
+          console.log("\tResearch Interest NOT FOUND.");
         }
       }
 
