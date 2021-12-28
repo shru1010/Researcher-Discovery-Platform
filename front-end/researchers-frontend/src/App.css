@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+body, html {
+    height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("student.jpg");
+  
+    /* Full height */
+    height: 100%;
+    opacity: 0.65;
+    background-color: black;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
+.heading{
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-family: "YAEnl21zi4U 0", _fb_, auto;
+    font-size: 76.6356px;
+    line-height: 1.05;
+    text-transform: uppercase;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
