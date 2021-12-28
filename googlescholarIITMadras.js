@@ -5,11 +5,11 @@ try {
   (async () => {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
+    await page.goto("https://scholar.google.com/citations?view_op=view_org&hl=en&org=4946093267834442390");
     let names=[]
     // let count=0
-    const scrapeData = async (url) => {
-        // count++;
-        await page.goto(url);    
+    const scrapeData = async () => {
+        // count++;    
         const users = await page.$$(".gs_ai_name");
         
         for (let i = 0; i < users.length; i++) {
@@ -44,14 +44,14 @@ try {
                 // console.log(url);
                 let url = page.url()
                 console.log(url)
-                return scrapeData(url); // Call this function recursively
+                return scrapeData(); // Call this function recursively
             }  
         } catch (error) {
            console.log(error); 
         }
     }
     
-    await scrapeData("https://scholar.google.com/citations?view_op=view_org&hl=en&org=6479859954410285989");
+    await scrapeData();
     await page.close();
     await browser.close();
     // Writing the data from scrapedData to a file.
