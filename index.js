@@ -3,7 +3,7 @@ try {
   (async () => {
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
-    await page.goto("https://scholar.google.com/");
+    await page.goto("https://scholar.google.com/citations?view_op=view_org&hl=en&org=6479859954410285989");
 
     await page.type("#gs_hdr_tsi", "Cloud computing");
     await page.click("#gs_hdr_tsb");
@@ -64,6 +64,22 @@ try {
     // await page.screenshot({ path: screenshot });
     // await browser.close();
     // console.log("See screenshot: " + screenshot);
+    await page.close();
+    await browser.close();
+    // Writing the data from scrapedData to a file.
+    fs.writeFile(
+      "users.json",
+      JSON.stringify(users),
+      "utf8",
+      function (err) {
+        if (err) {
+          return console.log(err);
+        }
+        console.log(
+          "The data has been scraped and saved successfully! View it at './users.json'"
+        );
+      }
+    );
   })();
 } catch (err) {
   console.error(err);
