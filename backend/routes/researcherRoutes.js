@@ -6,4 +6,6 @@ const router = express.Router();
 //Get all researchers route
 router.route("/").get(getResearchers);
 
+
+
 export default router;
