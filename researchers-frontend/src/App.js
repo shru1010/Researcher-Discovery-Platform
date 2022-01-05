@@ -36,7 +36,7 @@ function App() {
   
   const startResults = async ()=>{
     let res = await axios.get(
-      `https://5000-azure-bobcat-uw3ulwbd.ws-us25.gitpod.io/api/researchers`,
+      `https://rdp-website.herokuapp.com/api/researchers`,
       { withCredentials: true }
     );
     console.log(res.data);
@@ -50,7 +50,7 @@ function App() {
 
   const getResults = async () => {
     let res = await axios.get(
-      `https://5000-azure-bobcat-uw3ulwbd.ws-us25.gitpod.io/api/researchers/search?query=${researchArea}`,
+      `https://rdp-website.herokuapp.com/api/researchers/search?query=${researchArea}`,
       { withCredentials: true }
     );
     console.log(res.data);
