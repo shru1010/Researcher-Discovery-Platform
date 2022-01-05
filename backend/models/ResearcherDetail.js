@@ -8,6 +8,6 @@ const researcherDetailSchema  = new  mongoose.Schema({
     email: String,
     interests: Array,
 });
-
+researcherDetailSchema.index({interests: "text"});
 const ResearcherDetail =  mongoose.model("researcherDetail", researcherDetailSchema);
 export default ResearcherDetail;

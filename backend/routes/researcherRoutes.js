@@ -8,9 +8,9 @@ const router = express.Router();
 router.route("/").get(getResearchers);
 
 // Get researchers based on research area
-router.route("/search".get(getResearchersForInterest));
+router.route("/search").get(getResearchersForInterest);
 
 // Populate the database with researchers from Google Scholar API.
-router.route("/populate".get(getResearchersFromAPI));
+router.route("/populate").get(getResearchersFromAPI);
 
 export default router;
