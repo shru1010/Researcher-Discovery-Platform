@@ -2,12 +2,12 @@ body, html {
     height: 100%;
 }
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("student.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url("rdp-bg.jpeg"); */
   
     /* Full height */
     height: 100%;
-    opacity: 0.65;
-    background-color: black;
+    /* opacity: 0.65; */
+    /* background-color: black; */
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -28,4 +28,13 @@ body{
     line-height: 1.05;
     text-transform: uppercase;
 }
-  
+.box{
+    margin-top: 2%;
+    
+    width: 100%;
+    text-align: center;
+    /* margin-left: 5%; */
+}
+.textField{
+    width: 50%;
+}

@@ -1,4 +1,4 @@
-import Researcher from "../models/Researcher.js";
+
 import ResearcherDetail from "../models/ResearcherDetail.js";
 import asyncHandler from "express-async-handler";
 
