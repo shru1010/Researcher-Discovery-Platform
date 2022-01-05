@@ -1,17 +1,13 @@
-import './App.css';
-import { styled } from '@mui/material/styles';
-import TextField from '@mui/material/TextField';
-import { Button, Grid } from '@mui/material';
-import axios from 'axios';
+import "./App.css";
+import { styled } from "@mui/material/styles";
+import TextField from "@mui/material/TextField";
+import { Button, Grid } from "@mui/material";
+import axios from "axios";
 
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { useState } from 'react';
+import Typography from "@mui/material/Typography";
 
-
+import { useEffect, useState } from "react";
+import ProfileCard from "./ProfileCard";
 
 
 const CssTextField = styled(TextField)({
@@ -21,9 +17,9 @@ const CssTextField = styled(TextField)({
   // '& .MuiInput-underline:after': {
   //   borderBottomColor: 'green',
   // },
-  '& .MuiOutlinedInput-root': {
-    '& fieldset': {
-      borderColor: 'black',
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      borderColor: "white",
     },
     // '&:hover fieldset': {
     //   borderColor: 'yellow',
@@ -35,80 +31,99 @@ const CssTextField = styled(TextField)({
 });
 
 function App() {
-  const [results, setResults] = useState([]);
+  const [researchArea, setResearchArea] = useState("");
+  const [results, setResults] = useState(null);
+  
+  const startResults = async ()=>{
+    let res = await axios.get(
+      `https://5000-azure-bobcat-uw3ulwbd.ws-us25.gitpod.io/api/researchers`,
+      { withCredentials: true }
+    );
+    console.log(res.data);
+    setResults(res.data.slice(0, 10));
+  }
+  useEffect(() => {
+   startResults();
+  }, [])
 
 
-  const getResults = async () =>{
-    let res = await axios.get("https://5000-azure-bobcat-uw3ulwbd.ws-us25.gitpod.io/api/researchers", {withCredentials: true});
+
+  const getResults = async () => {
+    let res = await axios.get(
+      `https://5000-azure-bobcat-uw3ulwbd.ws-us25.gitpod.io/api/researchers/search?query=${researchArea}`,
+      { withCredentials: true }
+    );
     console.log(res.data);
     setResults(res.data);
-  }
+  };
 
-  function showProfileCard(result, index){
-    let image = result.imageURL;
-
-    if(image.indexOf("small_photo") !== -1){
-      const leftPart = image.slice(0, image.indexOf("small_photo"));
-      const rightPart = image.slice(image.indexOf("&user="));
-      image = leftPart + "medium_photo" + rightPart;
-      console.log(image);
-    }
-    
-
-    return (
-    <Grid item xs = {2}>
-    <Card key={index} sx={{ maxWidth: 200}}>
-  <CardMedia
-    component="img"
-    height="140"
-    width="200"
-    image={image}
-    alt="green iguana"
-  />
-  <CardContent>
-    <Typography gutterBottom variant="h5" component="div">
-      {result.name}
-    </Typography>
-    <Typography variant="body2" color="text.secondary">
-      Lizards are a widespread group of squamate reptiles, with over 6,000
-      species, ranging across all continents except Antarctica
-    </Typography>
-  </CardContent>
-  <CardActions>
-    <Button size="small">Share</Button>
-    <Button size="small">Learn More</Button>
-  </CardActions>
-  </Card>
-  </Grid>
-    );
-  }
   return (
     <div>
-      
       {/* <Box component="form" noValidate> */}
-      <div style={{"margin": "3%"}}>
-      <Grid container spacing={2} justifyContent="center" alignItems="center">
-        <Grid item xs={10}>
-        <CssTextField fullWidth id="outlined-basic" label="Enter the Research Area and press ENTER" variant="filled" />
-      
+      <div style={{ margin: "3%" }}>
+        <Grid container spacing={2} justifyContent="center" alignItems="center">
+          <Grid item xs={10}>
+            <CssTextField
+              onKeyPress={(event) => {
+                if (event.key === "Enter") {
+                  getResults();
+                }
+              }}
+              value={researchArea}
+              onChange={(e) => setResearchArea(e.target.value)}
+              fullWidth
+              id="outlined-basic"
+              label="Enter the Research Area and press ENTER"
+              variant="filled"
+            />
+          </Grid>
+          <Grid item xs={2}>
+            <Button
+              onClick={getResults}
+              variant="contained"
+              type="submit"
+              color="success"
+            >
+              Submit
+            </Button>
+          </Grid>
         </Grid>
-        <Grid item xs={2}>
-        <Button onClick={getResults} variant="contained" type="submit" color="success">Submit</Button>
-    </Grid>
-    </Grid>
-    </div>
-    <div className='profiles'>
-      <Grid container spacing={4} justifyContent="space-evenly" alignItems="center">
-      {
-
-results.map((result, index) => {return showProfileCard(result, index)}
-)
-}
-      </Grid>
-
-     
-    </div>
-
+      </div>
+      <div className="profiles">
+        {(() => {
+          // if (results === null) {
+          //   return (
+          //     <div style={{"textAlign": "center", "marginTop": "10%"}}>
+          //       <Typography variant="h2" style={{"color": "orange"}}>
+          //         Please enter something to see the results
+          //       </Typography>
+          //     </div>
+          //   );
+          // } else {
+            if (results != null && results.length === 0) {
+              return (
+                <div style={{"textAlign": "center", "marginTop": "10%"}}>
+                <Typography variant="h2" style={{"color": "orange"}}>
+                  No results found....!!
+                </Typography>
+              </div>
+              )
+            } else {
+              return (
+                <Grid
+                  container
+                  spacing={4}
+                  justifyContent="space-evenly"
+                  alignItems="center"
+                >
+                  {results != null && results.map((result) => (
+                    <ProfileCard  result={result}/>
+                  ))}
+                </Grid>
+              );
+            }
+          })()}
+      </div>
     </div>
   );
 }

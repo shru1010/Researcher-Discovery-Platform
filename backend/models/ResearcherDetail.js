@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 const researcherDetailSchema  = new  mongoose.Schema({
+    author_id: String,
     name: String,
     link: String,
     imageURL: String,
