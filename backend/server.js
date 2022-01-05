@@ -2,7 +2,6 @@ import express from "express";
 import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import researcherRouter from "./routes/researcherRoutes.js";
-import scholarAPIRouter from './routes/scholarAPI.js';
 import { errorHandler, notFound } from "./middlewares/errorMiddleware.js";
 import cors from "cors";
 dotenv.config();
@@ -17,10 +16,9 @@ app.use(express.json());
 app.use(cors({ origin: true, credentials: true }));
 
 app.use("/api/researchers", researcherRouter);
-app.use("/serp", scholarAPIRouter);
+
 app.get("/", (req, res)=>{
   res.send("Welcome to the RDP");
-
 })
 //If the request doesn't match any uri here, then it goes to notFound and gets 404 not found message passed to errorHandler
 app.use(notFound);

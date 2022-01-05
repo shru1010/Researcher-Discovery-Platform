@@ -1,13 +1,16 @@
-import express from "express";
-const router = express.Router();
+import asyncHandler from "express-async-handler";
 import ResearcherDetail from '../models/ResearcherDetail.js';
 //Serp API code
 
 import SerpApi  from 'google-search-results-nodejs';
 const search = new SerpApi.GoogleSearch("c927d2044b0700ece6e5f39a72cf6bf55b5bf27c5bcb56a223da84ac889ace23");
 
-const institutes = ["iit hyderabad", "iiit bangalore", "nit warangal", "iit bombay", "iiit hyderabad"]
-router.get("/", (req, res)=>{
+const institutes = ["iit hyderabad", "iiit bangalore", "nit warangal", "iit bombay", "iiit hyderabad"];
+
+//@desc     Get all researchers from Google Scholar SERP API and store in database
+//@route    GET /api/researchers/populate
+//@access   public
+export const getResearchersFromAPI = asyncHandler(async  (req, res)=>{
     const params = {
         engine: "google_scholar_profiles",
         mauthors: "",
@@ -47,5 +50,3 @@ router.get("/", (req, res)=>{
       
       res.send("Done");
 });
-
-export default router;
