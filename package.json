@@ -25,5 +25,9 @@
     "google-search-results-nodejs": "^2.1.0",
     "mongoose": "^6.1.4"
   },
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.0"
+  }
 }
