@@ -18,55 +18,5 @@ export const getResearchers = asyncHandler(async (req, res) => {
 export const getResearchersForInterest = asyncHandler(async (req, res) => {
     let results = await ResearcherDetail.find({$text: { $search: `${req.query.query}`}});
     console.log(results);
-    // let result = await ResearcherDetail.aggregate([
-    //     {
-    //         "$search": {
-    //             "index": "interests",
-    //             "text": {
-    //                 "query": `${req.query.query}`,
-    //                 "path": "interests",
-    //                 // "fuzzy": {
-    //                 //     "maxEdits": 2,
-    //                 //     "prefixLength": 3
-    //                 // }
-    //             }
-    //         },
-    //     }
-    // ]);
-    // console.log(result);
-    // Amruta's idea
-    // let result = await ResearcherDetail.aggregate([
-      //     { "$unwind": "$interests",
-      //     {
-      //         "$search": {
-      //             "index": "interests",
-      //             "autocomplete": {
-      //                 "query": `${req.query.query}`,
-      //                 "path": "interests",
-      //                  "fuzzy": {
-      //                     "maxEdits": 2,
-      //                      "prefixLength": 3
-      //                  }
-      //             }
-      //         },
-      //     }, \
-      // {
-         // $group: { 
-          //  _id: "$_id", 
-          //name: { $first: "$name" }, 
-          // link : {$first: "$link"},
-          // affiliations: {$first: "$affiliations"},
-          // imageURL: {$first: "$imageURL"},
-          // email: {$first: "$email"},
-          // interests: { $mergeObjects: "$interests"} 
-         // } 
-      // }, 
-      // {
-      //   $sort: { _id }
-      // }
-      // ]);
-      // console.log(result);
-
-
     res.send(results);
 });
