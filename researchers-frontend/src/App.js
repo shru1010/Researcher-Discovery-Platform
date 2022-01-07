@@ -7,9 +7,9 @@ import Typography from "@mui/material/Typography";
 import { useEffect, useState } from "react";
 import ProfileCard from "./ProfileCard";
 import SearchField from "./SearchField";
-//const uri = "https://rdp-website.herokuapp.com";
+const uri = "https://rdp-website.herokuapp.com";
 // const uri = "http://localhost:5000"
-const uri = "https://5000-gold-tuna-jzuo6skh.ws-us25.gitpod.io";
+// const uri = "https://5000-gold-tuna-jzuo6skh.ws-us25.gitpod.io";
 
 
 function App() {
