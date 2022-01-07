@@ -3,46 +3,51 @@ import ResearcherDetail from "../models/ResearcherDetail.js";
 //Serp API code
 
 import SerpApi from "google-search-results-nodejs";
-const search = new SerpApi.GoogleSearch(
-  process.env.GOOGLE_SCHOLAR_API_KEY
-);
+const search = new SerpApi.GoogleSearch(process.env.GOOGLE_SCHOLAR_API_KEY);
 
 var institutes = [
-    "iit roorkee",
-    "iit kanpur",
-    "iit guwahati",
-    "nit rourkela",
-    "iiit allahabad",
-    "iiit ranchi",
-    "iiit patna",
-    "nit goa",
-    "nit manipur",
-    "nit agartala",
-    "nit raipur",
-    "nit sikkim",
-    "nit andhra pradesh",
-     "iit tirupati",
-     "iiit surat",
-     "iiit lucknow",
-     "iiit nagpur",
-     "iiit pune",
-     "iiit dharwad",
-     "iit varanasi",
-     "iiit Tiruchirappalli",
-     "iit jammu",
-     
+  //"csir hyderabad",
+  //"csir new delhi",
+  //"csir bengalure",
+  //"csir kolkata",
+  //"csir chennai",
+  //"csir pune",
+  //"csir lucknow"
+    // "iit roorkee",
+    // "iit kanpur",
+    // "iit guwahati",
+    // "nit rourkela",
+    // "iiit allahabad",
+    // "iiit ranchi",
+    // "iiit patna",
+    // "nit goa",
+    // "nit manipur",
+    // "nit agartala",
+    // "nit raipur",
+    // "nit sikkim",
+    // "nit andhra pradesh",
+    //  "iit tirupati",
+    //  "iiit surat",
+    //  "iiit lucknow",
+    //  "iiit nagpur",
+    //  "iiit pune",
+    //  "iiit dharwad",
+    //  "iit varanasi",
+    //  "iiit Tiruchirappalli",
+    //  "iit jammu",
+
 //   "iit hyderabad",
 //   "iiit bangalore",
 //   "nit warangal",
-//   "iit bombay",
+//  "iit bombay",
 //   "iiit hyderabad",
 //   "nit delhi",
 //   "nit karnataka",
 //   "nit calicut",
-//   "iit delhi",
+//  "iit delhi",
 //   "iiit kota",
 //   "NIT Tiruchirappalli",
-//   "iit madras",
+//  "iit madras",
 //   "iit kharagpur"
 ];
 
@@ -55,7 +60,7 @@ export const getResearchersFromAPI = asyncHandler(async (req, res) => {
     mauthors: "",
     hl: "en",
   };
-  const authorsPerInstitute = 20;
+  const authorsPerInstitute = 50;
   const counters = {};
   for (let i = 0; i < institutes.length; i++) {
     counters[institutes[i]] = 0;
@@ -107,7 +112,7 @@ export const getResearchersFromAPI = asyncHandler(async (req, res) => {
   // Show result as JSON
   let i = 0;
     // for (i = 0; i < institutes.length; i++) {
-        params["mauthors"] = institutes[20];
+        params["mauthors"] = "label:cloud_computing iit bombay";
         params["after_author"] = "";
         search.json(params,  callback);
     // }
