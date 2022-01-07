@@ -42,8 +42,7 @@ export const getResearchersForInterest = asyncHandler(async (req, res) => {
 export const getAllInterests = asyncHandler(async (req, res) => {
   let results = await ResearcherDetail.find({}, {"_id": 0,"interests":1}) 
   let allinterests = []
-  results.forEach(el => allinterests = allinterests.concat(el["interests"]));
-  let lowercaseInterests = allinterests.map(el => el.toLowerCase());
-  let uniqueInterests = lowercaseInterests.filter((v, i, a) => a.indexOf(v) === i);
+  results.forEach(el => allinterests = allinterests.concat( el["interests"].map( el => el.toLowerCase() ) ));
+  let uniqueInterests = allinterests.filter((v, i, a) => a.indexOf(v) === i);
   res.send(uniqueInterests);
 })
