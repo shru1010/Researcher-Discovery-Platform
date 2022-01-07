@@ -9,7 +9,8 @@ import Typography from "@mui/material/Typography";
 import { useEffect, useState } from "react";
 import ProfileCard from "./ProfileCard";
 
-
+//const uri = "https://rdp-website.herokuapp.com";
+const uri = "http://localhost:5000"
 const CssTextField = styled(TextField)({
   // '& label.Mui-focused': {
   //   color: 'green',
@@ -36,7 +37,7 @@ function App() {
   
   const startResults = async ()=>{
     let res = await axios.get(
-      `https://rdp-website.herokuapp.com/api/researchers`,
+      uri+"/api/researchers",
       { withCredentials: true }
     );
     console.log(res.data);
@@ -50,7 +51,7 @@ function App() {
 
   const getResults = async () => {
     let res = await axios.get(
-      `https://rdp-website.herokuapp.com/api/researchers/search?query=${researchArea}`,
+      `${uri}/api/researchers/search?query=${researchArea}`,
       { withCredentials: true }
     );
     console.log(res.data);

@@ -12,28 +12,14 @@ export const getResearchers = asyncHandler(async (req, res) => {
   res.send(data);
 });
 
-// To make the first letter of each word a capital letter
-function titleCase(str) {
-  var splitStr = str.toLowerCase().split(' ');
-  for (var i = 0; i < splitStr.length; i++) {
-      // You do not need to check if i is larger than splitStr length, as your for does that for you
-      // Assign it back to the array
-      splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
-  }
-  // Directly return the joined string
-  return splitStr.join(' '); 
-}
-
 //@desc     Get researchers for search query
 //@route    GET /api/researchers/search
 //@access   public
 export const getResearchersForInterest = asyncHandler(async (req, res) => {
   let queryVal = req.query.query;
-  queryVal = titleCase(queryVal);
-  let results = await ResearcherDetail.find({"interests": {$elemMatch: {$eq: `${queryVal}`}}})
-    // let results = await ResearcherDetail.find({$text: { $search: `${req.query.query}`}});
-    console.log(results);
-    res.send(results);
+  let results = await ResearcherDetail.find({"interests": {$elemMatch: {$regex: `${queryVal}`, $options: 'i' }}})
+  console.log(results);
+  res.send(results);
 });
 
 //@desc     Get all interests without duplicates
