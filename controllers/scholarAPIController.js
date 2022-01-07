@@ -4,9 +4,7 @@ import ResearcherDetail from "../models/ResearcherDetail.js";
 
 import SerpApi from "google-search-results-nodejs";
 const search = new SerpApi.GoogleSearch(
-//   "c927d2044b0700ece6e5f39a72cf6bf55b5bf27c5bcb56a223da84ac889ace23"
-//   "6fea71bfff645c22145fe87c9ccd289bc5103248bcd64091cc7302ca389b7eec"
-"2f7eb7e101a8d1ec32850d8e77b775c9caa6c0658894b753bf1502d37975772c"
+  process.env.GOOGLE_SCHOLAR_API_KEY
 );
 
 var institutes = [
@@ -110,6 +108,7 @@ export const getResearchersFromAPI = asyncHandler(async (req, res) => {
   let i = 0;
     // for (i = 0; i < institutes.length; i++) {
         params["mauthors"] = institutes[20];
+        params["after_author"] = "";
         search.json(params,  callback);
     // }
   res.send("Done");
