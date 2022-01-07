@@ -1,5 +1,5 @@
 import express from "express";
-import { getResearchers, getResearchersForInterest } from "../controllers/researcherController.js";
+import { getAllInterests, getResearchers, getResearchersForInterest } from "../controllers/researcherController.js";
 import { getResearchersFromAPI } from "../controllers/scholarAPIController.js";
 
 const router = express.Router();
@@ -12,5 +12,8 @@ router.route("/search").get(getResearchersForInterest);
 
 // Populate the database with researchers from Google Scholar API.
 router.route("/populate").get(getResearchersFromAPI);
+
+// Get all interests without duplicates.
+router.route("/interests").get(getAllInterests);
 
 export default router;
