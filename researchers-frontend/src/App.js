@@ -9,7 +9,6 @@ import ProfileCard from "./ProfileCard";
 import SearchField from "./SearchField";
 const uri = process.env.REACT_APP_BACKEND_URI;
 
-console.log("URI is " + uri);
 function App() {
   const [researchArea, setResearchArea] = useState("");
   const [results, setResults] = useState(null);
@@ -46,7 +45,6 @@ function App() {
       `${uri}/api/researchers/search?query=${researchArea}`,
       { withCredentials: true }
     );
-    console.log(res.data);
     setResults(res.data);
   };
 

@@ -22,7 +22,6 @@ const ProfileCard = ({ result }) => {
       const leftPart = image.slice(0, image.indexOf("small_photo"));
       const rightPart = image.slice(image.indexOf("&user="));
       image = leftPart + "medium_photo" + rightPart;
-      console.log(image);
     }
     setImage(image);
   }, [result]);

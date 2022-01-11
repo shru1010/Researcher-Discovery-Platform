@@ -16,7 +16,6 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({ origin: true, credentials: true }));
-console.log("API key is " + process.env.DB_URI);
 app.use("/api/researchers", researcherRouter);
 
 app.get("/", (req, res)=>{

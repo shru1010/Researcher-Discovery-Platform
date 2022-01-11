@@ -64,13 +64,11 @@ export const getResearchersFromAPI = asyncHandler(async (req, res) => {
   for (let i = 0; i < institutes.length; i++) {
     counters[institutes[i]] = 0;
   }
-  console.log(counters);
   const callback = async function (data) {
     let institute = data["search_parameters"]["mauthors"];
-    console.log("Institute is " + institute);
     
     const profiles = data.profiles;
-    console.log("Length is " + profiles.length);
+
     const pagination = data.pagination;
 
     for (let i = 0; i < profiles.length; i++) {
@@ -90,7 +88,6 @@ export const getResearchersFromAPI = asyncHandler(async (req, res) => {
         email: currProfile["email"],
         interests: interests,
       });
-    //   console.log(researcher);
     const prof  = await ResearcherDetail.findOne({author_id: currProfile["author_id"]});
     if(prof == null || prof == undefined)
         await researcher.save();

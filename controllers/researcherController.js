@@ -15,8 +15,7 @@ export const getResearchers = asyncHandler(async (req, res) => {
 //@access   public
 export const getResearchersForInterest = asyncHandler(async (req, res) => {
   let queryVal = req.query.query;
-  let results = await ResearcherDetail.find({"interests": {$elemMatch: {$regex: `${queryVal}`, $options: 'i' }}})
-  console.log(results);
+  let results = await ResearcherDetail.find({"interests": {$elemMatch: {$regex: `${queryVal}`, $options: 'i' }}});
   res.send(results);
 });
 
