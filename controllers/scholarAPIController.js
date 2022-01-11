@@ -68,7 +68,7 @@ export const getResearchersFromAPI = asyncHandler(async (req, res) => {
     let institute = data["search_parameters"]["mauthors"];
     
     const profiles = data.profiles;
-
+    console.log(profiles);
     const pagination = data.pagination;
 
     for (let i = 0; i < profiles.length; i++) {
@@ -108,7 +108,7 @@ export const getResearchersFromAPI = asyncHandler(async (req, res) => {
   // Show result as JSON
   let i = 0;
     // for (i = 0; i < institutes.length; i++) {
-        params["mauthors"] = "label:cloud_computing iit bombay";
+        params["mauthors"] = "CSIR roorkee";
         params["after_author"] = "";
         search.json(params,  callback);
     // }
