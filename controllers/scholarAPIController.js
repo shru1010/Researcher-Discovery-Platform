@@ -68,7 +68,6 @@ export const getResearchersFromAPI = asyncHandler(async (req, res) => {
     let institute = data["search_parameters"]["mauthors"];
     
     const profiles = data.profiles;
-    console.log(profiles);
     const pagination = data.pagination;
 
     for (let i = 0; i < profiles.length; i++) {
