@@ -3,8 +3,7 @@ import ResearcherDetail from "../models/ResearcherDetail.js";
 //Serp API code
 
 import SerpApi from "google-search-results-nodejs";
-const search = new SerpApi.GoogleSearch(process.env.GOOGLE_SCHOLAR_API_KEY);
-
+const search = new SerpApi.GoogleSearch(`${process.env.GOOGLE_SCHOLAR_API_KEY}`);
 var institutes = [
   //"csir hyderabad",
   //"csir new delhi",

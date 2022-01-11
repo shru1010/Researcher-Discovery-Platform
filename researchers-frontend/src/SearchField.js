@@ -1,26 +1,15 @@
-// import { useState } from "react";
+
 import { styled } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import Autocomplete from '@mui/material/Autocomplete';
 import React from "react";
 
 const CssTextField = styled(TextField)({
-  // '& label.Mui-focused': {
-  //   color: 'green',
-  // },
-  // '& .MuiInput-underline:after': {
-  //   borderBottomColor: 'green',
-  // },
+ 
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
       borderColor: "white",
     },
-    // '&:hover fieldset': {
-    //   borderColor: 'yellow',
-    // },
-    // '&.Mui-focused fieldset': {
-    //   borderColor: 'green',
-    // },
   },
 });
 
@@ -28,7 +17,6 @@ const CssTextField = styled(TextField)({
 export default function SearchField({researchInterests, researchArea, setResearchArea, errorMsg, setErrorMsg, getResults}) {
   // const [researchArea, setResearchArea] = useState("");
   return (
-    // <Stack spacing={2} sx={{ width: 600 }}>
       <Autocomplete
         id="free-solo-demo"
         freeSolo
@@ -57,8 +45,6 @@ export default function SearchField({researchInterests, researchArea, setResearc
         />
       }
       />
-      
-      // <Button onClick={()=>console.log(researchArea)}>Submit</Button>
-    // </Stack>
+
   );
 }

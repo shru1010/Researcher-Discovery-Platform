@@ -1,11 +1,12 @@
-import express from "express";
+
 import dotenv from "dotenv";
+dotenv.config('./.env');
+import express from "express";
 import connectDB from "./config/db.js";
 import researcherRouter from "./routes/researcherRoutes.js";
 import { errorHandler, notFound } from "./middlewares/errorMiddleware.js";
 import cors from "cors";
-import path from "path";
-dotenv.config();
+
 
 connectDB();
 
@@ -15,7 +16,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({ origin: true, credentials: true }));
-
+console.log("API key is " + process.env.DB_URI);
 app.use("/api/researchers", researcherRouter);
 
 app.get("/", (req, res)=>{

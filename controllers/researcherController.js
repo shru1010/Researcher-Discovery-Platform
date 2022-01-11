@@ -1,7 +1,6 @@
 
 import ResearcherDetail from "../models/ResearcherDetail.js";
 import asyncHandler from "express-async-handler";
-
 //@desc     Get all researchers
 //@route    GET /api/researchers
 //@access   public

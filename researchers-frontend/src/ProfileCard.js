@@ -71,7 +71,6 @@ const ProfileCard = ({ result }) => {
             </Grid>
             <Grid item xs={2}>
               <IconButton
-                //   style={{ float: "right" }}
                 onClick={handleExpandClick}
                 aria-expanded={expanded}
                 aria-label="show more"

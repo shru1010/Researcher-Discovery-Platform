@@ -3,7 +3,6 @@ import { getAllInterests, getResearchers, getResearchersForInterest } from "../c
 import { getResearchersFromAPI } from "../controllers/scholarAPIController.js";
 
 const router = express.Router();
-
 //Get all researchers route
 router.route("/").get(getResearchers);
 

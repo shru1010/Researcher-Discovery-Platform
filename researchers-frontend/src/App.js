@@ -7,11 +7,9 @@ import Typography from "@mui/material/Typography";
 import { useEffect, useState } from "react";
 import ProfileCard from "./ProfileCard";
 import SearchField from "./SearchField";
-const uri = "https://rdp-website.herokuapp.com";
-// const uri = "http://localhost:5000"
-// const uri = "https://5000-gold-tuna-jzuo6skh.ws-us25.gitpod.io";
+const uri = process.env.REACT_APP_BACKEND_URI;
 
-
+console.log("URI is " + uri);
 function App() {
   const [researchArea, setResearchArea] = useState("");
   const [results, setResults] = useState(null);
@@ -54,7 +52,6 @@ function App() {
 
   return (
     <div>
-      {/* <Box component="form" noValidate> */}
       <div style={{ margin: "3%" }}>
         <Grid container spacing={2} justifyContent="center" alignItems="center">
           <Grid item xs={10}>
@@ -74,15 +71,6 @@ function App() {
       </div>
       <div className="profiles">
         {(() => {
-          // if (results === null) {
-          //   return (
-          //     <div style={{"textAlign": "center", "marginTop": "10%"}}>
-          //       <Typography variant="h2" style={{"color": "orange"}}>
-          //         Please enter something to see the results
-          //       </Typography>
-          //     </div>
-          //   );
-          // } else {
             if (results != null && results.length === 0) {
               return (
                 <div style={{"textAlign": "center", "marginTop": "10%"}}>
