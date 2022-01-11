@@ -18,6 +18,7 @@ function App() {
   const [interests, setInterests] = useState([]);
   const [error, setError] = useState("");
   
+  // This functions retrieves and displays first ten researchers for the home page.
   const startResults = async ()=>{
     let res = await axios.get(
       uri+"/api/researchers",
@@ -25,6 +26,8 @@ function App() {
     );
     setResults(res.data.slice(0, 10));
   }
+
+  // Retrieves the array of all unique research areas from database
   const getAllInterests = async ()=>{
     let res = await axios.get(uri + "/api/researchers/interests", {withCredentials: true});
     setInterests(res.data);
@@ -34,8 +37,7 @@ function App() {
    getAllInterests();
   }, [])
 
-
-
+  // Given a research area in the search bar, this fucntion retrieves all profiles with that area from database API.
   const getResults = async () => {
     if(researchArea.length === 0){
       setError("Please enter something to show the results");

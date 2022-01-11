@@ -23,6 +23,8 @@ const CssTextField = styled(TextField)({
     // },
   },
 });
+
+// This is the code for the autocomplete search field
 export default function SearchField({researchInterests, researchArea, setResearchArea, errorMsg, setErrorMsg, getResults}) {
   // const [researchArea, setResearchArea] = useState("");
   return (

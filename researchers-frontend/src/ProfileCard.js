@@ -11,6 +11,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
+// The code for each Profile card displayed
 const ProfileCard = ({ result }) => {
   const [image, setImage] = useState("");
   const [expanded, setExpanded] = useState(false);

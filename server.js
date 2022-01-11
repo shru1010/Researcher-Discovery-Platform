@@ -4,6 +4,7 @@ import connectDB from "./config/db.js";
 import researcherRouter from "./routes/researcherRoutes.js";
 import { errorHandler, notFound } from "./middlewares/errorMiddleware.js";
 import cors from "cors";
+import path from "path";
 dotenv.config();
 
 connectDB();

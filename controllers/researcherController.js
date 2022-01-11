@@ -1,7 +1,6 @@
 
 import ResearcherDetail from "../models/ResearcherDetail.js";
 import asyncHandler from "express-async-handler";
-import { query } from "express";
 
 //@desc     Get all researchers
 //@route    GET /api/researchers
@@ -12,7 +11,7 @@ export const getResearchers = asyncHandler(async (req, res) => {
   res.send(data);
 });
 
-//@desc     Get researchers for search query
+//@desc     Get researchers for research interest in search query
 //@route    GET /api/researchers/search
 //@access   public
 export const getResearchersForInterest = asyncHandler(async (req, res) => {
