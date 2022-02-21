@@ -3,7 +3,7 @@ import ResearcherDetail from "../models/ResearcherDetail.js";
 //Serp API code
 
 import SerpApi from "google-search-results-nodejs";
-const search = new SerpApi.GoogleSearch(`${process.env.GOOGLE_SCHOLAR_API_KEY}`);
+
 var institutes = [
   //"csir hyderabad",
   //"csir new delhi",
@@ -54,12 +54,13 @@ var institutes = [
 //@route    GET /api/researchers/populate
 //@access   public
 export const getResearchersFromAPI = asyncHandler(async (req, res) => {
+  const search = new SerpApi.GoogleSearch(`${process.env.GOOGLE_SCHOLAR_API_KEY}`);
   const params = {
     engine: "google_scholar_profiles",
     mauthors: "",
     hl: "en",
   };
-  const authorsPerInstitute = 50;
+  const authorsPerInstitute = 200;
   const counters = {};
   for (let i = 0; i < institutes.length; i++) {
     counters[institutes[i]] = 0;
@@ -105,9 +106,9 @@ export const getResearchersFromAPI = asyncHandler(async (req, res) => {
   };
 
   // Show result as JSON
-  let i = 0;
+  // let i = 0;
     // for (i = 0; i < institutes.length; i++) {
-        params["mauthors"] = "CSIR roorkee";
+        params["mauthors"] = "IIT Delhi";
         params["after_author"] = "";
         search.json(params,  callback);
     // }
